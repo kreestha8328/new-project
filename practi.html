@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button id="loadButton">Load Names</button>
+        <button id="removeButton">Remove Name</button>
+        <div id="namesList"></div>
+        <script>
+            let names = ["A", "B", "C", "D"];
+            let div = document.getElementById("namesList");
+            const loadBtn = document.getElementById("loadButton");
+            const removeBtn = document.getElementById("removeButton");
+
+            loadBtn.addEventListener("click", () => {
+                if (div.children.length === 0) {
+                    let ol = document.createElement("ol");
+                    names.forEach(name => {
+                        let li = document.createElement("li");
+                        li.textContent = name;
+                        ol.appendChild(li);
+                    });
+                    div.appendChild(ol);
+                }
+            }); 
+
+            removeBtn.addEventListener("click", () => {
+                if (div.children.length > 0) {
+                    let ol = div.querySelector("ol");
+                    if (ol.children.length > 0) {
+                        ol.removeChild(ol.lastElementChild);
+                    }
+                    if (ol.children.length === 0) {
+                        div.removeChild(ol);
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

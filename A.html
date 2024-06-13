@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+</head>
+<body>
+
+
+<script>
+async function callApi() {
+    setInterval(() => {
+        console.log("Api called");
+    }, 3000);
+}
+
+(async () => {
+    await callApi();
+    console.log("Last step");
+})();
+</script>
+
+</body>
+</html>

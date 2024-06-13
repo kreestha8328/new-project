@@ -1,0 +1,17 @@
+# Speech Gender Recognition
+
+This project aims to recognize gender from speech using a Convolutional Neural Network (CNN).
+
+## Project Structure
+
+- `data/`: Contains the dataset with male and female speech samples.
+- `scripts/`: Contains the preprocessing and model training scripts.
+- `requirements.txt`: List of required Python packages.
+- `README.md`: Project overview and instructions.
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/speech-gender-recognition.git
+   cd speech-gender-recognition

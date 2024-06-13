@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// Creating an array
+let fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits);
+
+// Adding elements to an array
+fruits.push("Mango");
+console.log(fruits);
+
+//accessing elements in array
+let firstFruit = fruits[0]; 
+let secondFruit = fruits[1];
+console.log(fruits);
+
+// Removing elements from an array
+fruits.pop();
+console.log(fruits);
+
+//adding element in an array
+fruits.push("pineapple");
+console.log(fruits);
+
+//delete certain array
+fruits.splice(0,1)
+console.log(fruits);
+
+//sorting in default
+fruits.sort()
+console.log(fruits);
+
+//sorting in a asc or desc
+fruits.sort((a, b) => b - a);
+console.log(fruits);
+
+//filter the given data
+fruits.filter(fruit => fruit.startsWith("M"));
+console.log(fruits);
+
+// Checking if some fruits contain the letter 'a'
+fruits.some(fruit => fruit.includes("a"));
+console.log(fruits);
+
+// Checking if every fruit contains the letter 'n'
+fruits.every(fruit => fruit.includes("n"));
+console.log(fruits);
+</script>
+</body>
+</html>

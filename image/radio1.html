@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+    male<input type="checkbox" id="male" />
+    female<input type="checkbox" id="female" />
+    <button onclick="myFunction()">Check</button>
+    <script>
+        function myFunction() {
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+
+            console.log("Male checked: " + male);
+            console.log("Female checked: " + female);
+        }
+    </script>
+</body>
+</html>

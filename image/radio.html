@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radio Buttons Alert</title>
+<style>
+    .radio-label {
+        margin-right: 10px;
+    }
+</style>
+</head>
+<body>
+
+<label class="radio-label">
+    <input type="radio" class="radio-btn" name="options" value="Option 1"> Option 1
+</label>
+<label class="radio-label">
+    <input type="radio" class="radio-btn" name="options" value="Option 2"> Option 2
+</label>
+<label class="radio-label">
+    <input type="radio" class="radio-btn" name="options" value="Option 3"> Option 3
+</label>
+
+<script>
+    const radioButtons = document.querySelectorAll('.radio-btn');
+
+    radioButtons.forEach(button => {
+        button.addEventListener('change', function() {
+            if (this.checked) {
+                alert("Selected: " + this.value);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
